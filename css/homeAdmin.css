@@ -1,0 +1,179 @@
+body{
+    width: 100%;
+	margin:0;
+	color:#f9faff;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+    position:absolute;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+a{color:inherit;text-decoration:none}
+
+.home-wrap{
+	margin:auto;
+	min-height:1500px;
+	position:relative;
+	background:url(images/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.home-html{
+  width: 100%;
+	height:100%; 
+	position:absolute;
+	padding:20px 70px 50px 70px;
+	background:rgba(52, 65, 99, 0.9);
+
+}
+.home-html .events-htm,
+.home-html .certificates-htm,
+.home-html .students-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+	height:100%;
+}
+
+
+.home-html .events,
+.home-html .certificates,
+.home-html .students{
+	display:none;
+}
+.home-html .tab,
+.home-form .group .label{
+	text-transform:uppercase;
+}
+.home-html .tab{
+	font-size:22px;
+    cursor: pointer;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.home-html .events:checked + .tab,
+.home-html .certificates:checked + .tab,
+.home-html .students:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.home-form{
+	min-height:345px;
+  height:100%;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.home-form .group{
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+
+	text-align: justify;
+	
+}
+.home-form .tile{
+	
+	background-color: rgba(212, 243, 253, 0.226);
+	padding: auto;
+	align-items: center;
+	text-align: center;
+}
+
+.home-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.home-form  span{
+	color:rgb(250, 250, 250);
+	font-size:25px;
+	padding-left: 15px;
+	text-align: justify;
+}
+
+
+.home-form .group .check:checked + label{
+	color:#fff;
+}
+
+
+.home-html .events:checked + .tab + .certificates + .tab + .students + .tab + .home-form .events-htm{
+	transform:rotate(0);
+}
+
+.home-html .certificates:checked + .tab+ .students + .tab +.home-form .certificates-htm{
+	transform:rotate(0);
+}
+
+.home-html .students:checked + .tab +.home-form .students-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+.home-html .signout {
+ 
+  text-align: right;
+}
+.home-html .signout a button{
+  background-color: #69a3ca; 
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+.home-html  button{
+  background-color: #69a3ca; 
+  border: 2px solid rgb(170, 235, 255);
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  width: 15%;
+}
+input,select {
+  border: 2px solid rgb(170, 235, 255);
+  border-radius: 4px;
+  width: 15%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+tr:nth-child(even) {
+  font-size: 14px;
+  color: #047baa;
+  background-color: #ffffff;}
+tr{
+  font-size: 14px;
+  color:white;
+}
+th {
+  background-color: #047baa;
+  color: white;
+  min-width: 20%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Event Registration </title>
+	<link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+	<div class="header">
+		<div>Career Guidance Unit<br><span>Events Information System</span></div>
+	</div>
+	<br>
+
+	<div class="login">
+		
+        <form action="registration.php" method="post">
+		
+				<input type="text" placeholder="Fullname" name="fullname" class="form-control" required>
+				<input type="text" placeholder="Registration Number eg:16MS34" name="regnumber" class="form-control" required>
+				<input type="email" placeholder="Email" name="email" class="form-control" required>
+				<input type="tel" pattern="[+]{1}[0-9]{11,14}"  placeholder="Contact Number eg:+94771234567" name="contact" class="form-control" required>
+				<input type="password" placeholder="Password" name="password" class="form-control" required>
+				<input type="password" placeholder="Password Confirmation" name="confirm-password" class="form-control" required>
+			<button type="submit" class="btn btn-primary" id="registerButton"> Register </button>
+		 </form>
+
+		<form action="login.html">
+			<button type="submit" class="up" > Login </button>
+		</form>
+	</div>
+</body>
+</html>
